@@ -2,8 +2,8 @@ import Config
 
 # Configure your database
 config :crud_demo, CrudDemo.Repo,
-  username: "postgres",
-  password: "postgres",
+   username: "postgres",
+  password: "",
   hostname: "localhost",
   database: "crud_demo_dev",
   stacktrace: true,
