@@ -18,6 +18,7 @@ defmodule CrudDemoWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+    resources "/persons", PersonController
   end
 
   # Other scopes may use custom stacks.
