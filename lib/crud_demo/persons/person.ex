@@ -5,6 +5,7 @@ defmodule CrudDemo.Persons.Person do
   schema "persons" do
     field :name, :string
     field :description, :string
+    field :age, :integer
 
     timestamps()
   end
@@ -12,7 +13,7 @@ defmodule CrudDemo.Persons.Person do
   @doc false
   def changeset(person, attrs) do
     person
-    |> cast(attrs, [:name, :description])
-    |> validate_required([:name, :description])
+    |> cast(attrs, [:name, :description, :age])
+    |> validate_required([:name, :description, :age])
   end
 end
